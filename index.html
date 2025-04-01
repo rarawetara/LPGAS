@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LPGAS - Industrial LPG Equipment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LPGAS - Your trusted supplier of industrial LPG equipment in UAE" />
+  <meta name="keywords" content="LPG equipment, industrial gas, vaporizers, REGO products, UAE" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo" onclick="goToAbout()">LPGAS</div>
+    <div class="contact">
+      <a href="tel:+971503420523">+971 (50) 342-0523</a>
+      <span>|</span>
+      <a href="mailto:info@lpgas.ae">info@lpgas.ae</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="main-menu">
+        <button id="catalogue" onclick="showMainMenu()">
+          <span class="menu-icon">☰</span>
+          Catalogue
+        </button>
+      </nav>
+    </aside>
+
+    <div class="main-panel">
+      <div class="search-bar">
+        <div id="searchBar" class="search-wrapper"></div>
+      </div>
+      <div id="filters" class="filters"></div>
+      <main id="content" class="content">
+        <!-- Контент каталога будет здесь -->
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function initPage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const view = urlParams.get("view");
+
+      if (view === "catalogue") {
+        showMainMenu();
+      }
+    }
+  </script>
+  <script>
+    window.onload = initPage;
+  </script>
+</body>
+</html>

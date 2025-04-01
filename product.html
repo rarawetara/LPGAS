@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product-style.css">
+</head>
+<body onload="renderProductPage()">
+  <header class="topbar">
+    <div class="logo" onclick="window.location.href='index.html'">LPGAS</div>
+    <div class="contact">
+      <span>📞 +971 (50) 342-0523</span> |
+      <span>📧 info@lpgas.ae</span>
+    </div>
+  </header>
+
+  <main class="product-page" id="product-container">
+    <!-- Product data loads here -->
+  </main>
+
+  <script src="products-data.js"></script>
+  <script>
+    function renderProductPage() {
+      const id = new URLSearchParams(window.location.search).get("id");
+      const backButton = `<div class="back-button"><a href="index.html?view=catalogue">← Back to Catalog</a></div>`;
+      const tabs = `
+        <div class="tabs">
+          <button data-tab="desc">Description</button>
+          <button data-tab="specs">Specifications</button>
+          <button data-tab="options">Options</button>
+          <button data-tab="photo">Photo</button>
+        </div>
+      `;
+      const product = productDetails[id];
+
+      if (!product) {
+        document.getElementById("product-container").innerHTML = '<p>Product not found</p>';
+        return;
+      }
+
+      const images = product.images.map(img => `<img src="images/${img}" alt="${product.name}" class="product-img" style="max-width: 300px; margin: 10px;">`).join('');
+      const options = product.options.map(opt => `<li>${opt}</li>`).join('');
+      const related = product.relatedModels.map(model => `
+        <li><a href="product.html?id=${model.id}">${model.name}</a> — ${model.cooling}, ${model.power}</li>
+      `).join('');
+
+      document.getElementById("product-container").innerHTML = backButton + tabs + `
+        <div class="product-header">
+          <div class="product-info">
+            <h1>${product.name}</h1>
+            <p><strong>Product code:</strong> ${product.productCode}</p>
+            <p><strong>Guarantee:</strong> ${product.warranty}</p>
+            <p><strong>${product.delivery}</strong></p>
+            <p><strong>Price:</strong> ${product.price}</p>
+            <p><strong>Availability:</strong> ${product.availability}</p>
+            <button>PLACE AN ORDER</button> or <a href="#">Ask a Question</a>
+          </div>
+          <div class="product-image">
+            <img src="images/${product.images[0]}" alt="${product.name}" class="product-img-main">
+          </div>
+        </div>
+
+        <div id="desc" class="tab-content">
+          <h2>DESCRIPTION</h2>
+          <p>${product.description}</p>
+        </div>
+
+        <div id="specs" class="tab-content hidden">
+          <h2>SPECIFICATIONS</h2>
+          <div class="spec-grid">
+            <div class="spec-box">
+              <table>
+                <thead><tr><th colspan="2">Installation</th></tr></thead>
+                <tbody>
+                  ${Object.entries(product.specifications.installation).map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="spec-box">
+              <table>
+                <thead><tr><th colspan="2">Dimensions & Weight</th></tr></thead>
+                <tbody>
+                  ${Object.entries(product.specifications.dimensions).map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="spec-box">
+              <table>
+                <thead><tr><th colspan="2">Engine</th></tr></thead>
+                <tbody>
+                  ${Object.entries(product.specifications.engine).map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="spec-box">
+              <table>
+                <thead><tr><th colspan="2">Additional Data</th></tr></thead>
+                <tbody>
+                  ${Object.entries(product.specifications.additional).map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div id="options" class="tab-content hidden">
+          <h2>OPTIONS</h2>
+          <ul>${options}</ul>
+        </div>
+
+        <div id="photo" class="tab-content hidden">
+          <h2>PHOTOS</h2>
+          <div class="gallery">${images}</div>
+        </div>
+
+        <h2>Other Models of This Series</h2>
+        <ul>${related}</ul>
+      `;
+
+      document.querySelectorAll(".tabs button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".tab-content").forEach(tab => tab.classList.add("hidden"));
+          document.getElementById(btn.dataset.tab).classList.remove("hidden");
+        });
+      });
+    }
+  </script>
+</body>
+</html>
