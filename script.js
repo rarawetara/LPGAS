@@ -124,6 +124,92 @@ const catalogData = [
     category: "REGO",
     subcategories: [
       {
+        name: "Back Pressure Check Valves",
+        products: [
+          {
+            type: "Threaded",
+            items: [
+              { id: "ssa3197", name: "SSA3197", image: "images/placeholder-1.png" },
+              { id: "ssa3196", name: "SSA3196", image: "images/placeholder-1.png" },
+              { id: "ssa3186", name: "SSA3186", image: "images/placeholder-1.png" },
+              { id: "ss-a3197", name: "(SS)A3197", image: "images/placeholder-1.png" },
+              { id: "ss-a3196", name: "(SS)A3196", image: "images/placeholder-1.png" },
+              { id: "ss-a3186", name: "(SS)A3186", image: "images/placeholder-1.png" },
+              { id: "a3198s", name: "A3198S", image: "images/placeholder-1.png" },
+              { id: "a3187s", name: "A3187S", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Thread by Flange",
+            items: [
+              { id: "a6586d", name: "(A)6586D", image: "images/placeholder-1.png" },
+              { id: "a3176", name: "(A)3176", image: "images/placeholder-1.png" },
+              { id: "a3146-series", name: "(A)3146 Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Flanged",
+            items: [
+              { id: "ssa7794f", name: "SSA7794F", image: "images/placeholder-1.png" },
+              { id: "a7796", name: "A7796", image: "images/placeholder-1.png" },
+              { id: "a7794", name: "A7794", image: "images/placeholder-1.png" },
+              { id: "a7624", name: "A7624", image: "images/placeholder-1.png" },
+              { id: "a7616", name: "A7616", image: "images/placeholder-1.png" },
+              { id: "a3400l6", name: "A3400L6", image: "images/placeholder-1.png" },
+              { id: "a3400l4", name: "A3400L4", image: "images/placeholder-1.png" },
+              { id: "a3276bc", name: "A3276BC", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Hose End, Fueling and Quick-Acting Valves",
+        products: [
+          {
+            type: "Pull Away Valves",
+            items: [
+              { id: "a2543a-series", name: "A2543A Series", image: "images/placeholder-1.png" },
+              { id: "7901tl-series", name: "7901TL Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Hose-End Valves",
+            items: [
+              { id: "a7799l", name: "A7799L", image: "images/placeholder-1.png" },
+              { id: "a7799a", name: "A7799A", image: "images/placeholder-1.png" },
+              { id: "a7795l", name: "A7795L", image: "images/placeholder-1.png" },
+              { id: "a7795a", name: "A7795A", image: "images/placeholder-1.png" },
+              { id: "a7708l", name: "A7708L", image: "images/placeholder-1.png" },
+              { id: "a7707l", name: "A7707L", image: "images/placeholder-1.png" },
+              { id: "a707l", name: "A707L", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Fueling Nozzles",
+            items: [
+              { id: "fn1350-series", name: "FN1350 Series", image: "images/placeholder-1.png" },
+              { id: "a2141a-series", name: "A2141A Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Crop Driers, Charging Manifolds & Dispensing",
+            items: [
+              { id: "a7793l", name: "A7793L", image: "images/placeholder-1.png" },
+              { id: "a7793a", name: "A7793A", image: "images/placeholder-1.png" },
+              { id: "a7790heh", name: "A7790HEH", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Universal Series",
+            items: [
+              { id: "7901t-series", name: "7901T Series", image: "images/placeholder-1.png" },
+              { id: "7554-series", name: "7554 Series", image: "images/placeholder-1.png" },
+              { id: "7053t", name: "7053T", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
+      {
         name: "ACME, CGA, POL Fittings & Adapters",
         products: [
           {
@@ -255,7 +341,361 @@ const catalogData = [
             ]
           }
         ]
-      }
+      },
+      {
+        name: "Internal Valves",
+        products: [
+          {
+            type: "Categories",
+            items: [
+              { id: "flomatic", name: "Flomatic", image: "images/placeholder-1.png" },
+              { id: "a3200-threaded", name: "A3200 Threaded", image: "images/placeholder-1.png" },
+              { id: "a3200-flanged", name: "A3200 Flanged", image: "images/placeholder-1.png" },
+              { id: "a3200-threaded-by-flange", name: "A3200 Threaded by Flange", image: "images/placeholder-1.png" },
+              { id: "actuators-accessories", name: "Actuators & Accessories", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Product Types",
+            items: [
+              { id: "rotary-actuators", name: "Rotary Actuators", image: "images/placeholder-1.png" },
+              { id: "pneumatic-actuators", name: "Pneumatic Actuators", image: "images/placeholder-1.png" },
+              { id: "electric-actuators", name: "Electric Actuators", image: "images/placeholder-1.png" },
+              { id: "thermal-latch", name: "Thermal Latch", image: "images/placeholder-1.png" },
+              { id: "remote-cable-controls", name: "Remote Cable Controls", image: "images/placeholder-1.png" },
+              { id: "3-way-valves", name: "3-Way Valves", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Series",
+            items: [
+              { id: "ssa3218f-series", name: "SSA3218F Series", image: "images/placeholder-1.png" },
+              { id: "ssa3218fd-series", name: "SSA3218FD Series", image: "images/placeholder-1.png" },
+              { id: "ssa3213f-series", name: "SSA3213F Series", image: "images/placeholder-1.png" },
+              { id: "ssa3213fpa-series", name: "SSA3213FPA Series", image: "images/placeholder-1.png" },
+              { id: "ssa3209f-series", name: "SSA3209F Series", image: "images/placeholder-1.png" },
+              { id: "ssa3209pa-series", name: "SSA3209PA Series", image: "images/placeholder-1.png" },
+              { id: "ba3211d-series", name: "BA3211D Series", image: "images/placeholder-1.png" },
+              { id: "ba3212r-series", name: "BA3212R Series", image: "images/placeholder-1.png" },
+              { id: "a7883fk-series", name: "A7883FK Series", image: "images/placeholder-1.png" },
+              { id: "a7853a-series", name: "A7853A Series", image: "images/placeholder-1.png" },
+              { id: "a7853pa-series", name: "A7853PA Series", image: "images/placeholder-1.png" },
+              { id: "a3219-series", name: "A3219 Series", image: "images/placeholder-1.png" },
+              { id: "a3219fpa-series", name: "A3219FPA Series", image: "images/placeholder-1.png" },
+              { id: "a3219oa-series", name: "A3219OA Series", image: "images/placeholder-1.png" },
+              { id: "a3219rt-series", name: "A3219RT Series", image: "images/placeholder-1.png" },
+              { id: "a3219w-series", name: "A3219W Series", image: "images/placeholder-1.png" },
+              { id: "a3218fpa-series", name: "A3218FPA Series", image: "images/placeholder-1.png" },
+              { id: "a3218oa-series", name: "A3218OA Series", image: "images/placeholder-1.png" },
+              { id: "a3218pa-series", name: "A3218PA Series", image: "images/placeholder-1.png" },
+              { id: "a3218loa-series", name: "A3218LOA Series", image: "images/placeholder-1.png" },
+              { id: "a3217pa-series", name: "A3217PA Series", image: "images/placeholder-1.png" },
+              { id: "a3217roa-series", name: "A3217ROA Series", image: "images/placeholder-1.png" },
+              { id: "a3217arpa-series", name: "A3217ARPA Series", image: "images/placeholder-1.png" },
+              { id: "a3217loa-series", name: "A3217LOA Series", image: "images/placeholder-1.png" },
+              { id: "a3217-and-da-series", name: "A3217 & A3217DA Series", image: "images/placeholder-1.png" },
+              { id: "a3213fpa-series", name: "A3213FPA Series", image: "images/placeholder-1.png" },
+              { id: "a3213oa-series", name: "A3213OA Series", image: "images/placeholder-1.png" },
+              { id: "a3213pa-accessories", name: "A3213PA Accessories", image: "images/placeholder-1.png" },
+              { id: "a3213tl-series", name: "A3213TL Series", image: "images/placeholder-1.png" },
+              { id: "a3213d-series", name: "A3213D Series", image: "images/placeholder-1.png" },
+              { id: "a3212ra-series", name: "A3212RA Series", image: "images/placeholder-1.png" },
+              { id: "a3212r-series", name: "A3212R Series", image: "images/placeholder-1.png" },
+              { id: "a3212oa-series", name: "A3212OA Series", image: "images/placeholder-1.png" },
+              { id: "a3211d-series", name: "A3211D Series", image: "images/placeholder-1.png" },
+              { id: "a3209pa-series", name: "A3209PA Series", image: "images/placeholder-1.png" },
+              { id: "a3209poa-series", name: "A3209POA Series", image: "images/placeholder-1.png" },
+              { id: "a3209foa-series", name: "A3209FOA Series", image: "images/placeholder-1.png" },
+              { id: "a3209tl-series", name: "A3209TL Series", image: "images/placeholder-1.png" },
+              { id: "a3209dt-series", name: "A3209D(T) Series", image: "images/placeholder-1.png" },
+              { id: "a3200ea-series", name: "A3200EA Series", image: "images/placeholder-1.png" },
+              { id: "3200c-and-l-series", name: "3200C & 3200L Series", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Emergency Shutoff Valves",
+        products: [
+          {
+            type: "Valve Types and Actuators",
+            items: [
+              { id: "electric-actuator", name: "Electric Actuator", image: "images/placeholder-1.png" },
+              { id: "cable-actuator", name: "Cable Actuator", image: "images/placeholder-1.png" },
+              { id: "cable-kits", name: "Cable Kits", image: "images/placeholder-1.png" },
+              { id: "pneumatic-actuator", name: "Pneumatic Actuator", image: "images/placeholder-1.png" },
+              { id: "pneumatic-controls", name: "Pneumatic Controls", image: "images/placeholder-1.png" },
+              { id: "rotary-actuator", name: "Rotary Actuator", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Body Categories",
+            items: [
+              { id: "a6000-threaded", name: "A6000 Threaded", image: "images/placeholder-1.png" },
+              { id: "fa6000-flanged", name: "FA6000 Flanged", image: "images/placeholder-1.png" },
+              { id: "actuators-cable-pneumatic", name: "Actuators, Cable & Pneumatic Controls", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Series",
+            items: [
+              { id: "a6006-series", name: "A6006 Series", image: "images/placeholder-1.png" },
+              { id: "a6008-series", name: "A6008 Series", image: "images/placeholder-1.png" },
+              { id: "va6010-series", name: "(V)A6010 Series", image: "images/placeholder-1.png" },
+              { id: "va6016-series", name: "(V)A6016 Series", image: "images/placeholder-1.png" },
+              { id: "va6024-series", name: "(V)A6024 Series", image: "images/placeholder-1.png" },
+              { id: "fva6010-series", name: "F(V)A6010 Series", image: "images/placeholder-1.png" },
+              { id: "fva6016-series", name: "F(V)A6016 Series", image: "images/placeholder-1.png" },
+              { id: "fva6024-series", name: "F(V)A6024 Series", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Rotogages",
+        products: [
+          {
+            type: "Rotogage Tubes",
+            items: [
+              { id: "a9090-series-tubes", name: "A9090 Series", image: "images/placeholder-1.png" },
+              { id: "a9091-series-tubes", name: "A9091 Series", image: "images/placeholder-1.png" },
+              { id: "a9091-m-series-tubes", name: "A9091-M Series", image: "images/placeholder-1.png" },
+              { id: "2071-series-tubes", name: "2071 Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Rotogage Dials",
+            items: [
+              { id: "a9090-series-dials", name: "A9090 Series", image: "images/placeholder-1.png" },
+              { id: "a9091-series-dials", name: "A9091 Series", image: "images/placeholder-1.png" },
+              { id: "a9091-m-series-dials", name: "A9091-M Series", image: "images/placeholder-1.png" },
+              { id: "2071-series-dials", name: "2071 Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Rotogage Assembly",
+            items: [
+              { id: "a9090-series-assembly", name: "A9090 Series", image: "images/placeholder-1.png" },
+              { id: "a9091-series-assembly", name: "A9091 Series", image: "images/placeholder-1.png" },
+              { id: "a9091-m-series-assembly", name: "A9091-M Series", image: "images/placeholder-1.png" },
+              { id: "2071-series-assembly", name: "2071 Series", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Pressure Regulators & Accessories",
+        products: [
+          {
+            type: "Pressure Regulators",
+            items: [
+              { id: "lv3403b-series", name: "Compact LV3403B Series", image: "images/placeholder-1.png" },
+              { id: "lv3403ek", name: "Compact LV3403EK", image: "images/placeholder-1.png" },
+              { id: "lv404b", name: "Compact LV404B", image: "images/placeholder-1.png" },
+              { id: "lv404y39", name: "Compact LV404Y39", image: "images/placeholder-1.png" },
+              { id: "5824", name: "First Stage Full Size 5824", image: "images/placeholder-1.png" },
+              { id: "first-stage-regulators", name: "First Stage Regulators", image: "images/placeholder-1.png" },
+              { id: "lv404b-series", name: "Full Size LV404B Series", image: "images/placeholder-1.png" },
+              { id: "lv404b1", name: "Full Size LV404B1", image: "images/placeholder-1.png" },
+              { id: "lv404h-series", name: "Full Size LV404H Series", image: "images/placeholder-1.png" },
+              { id: "lv404h1", name: "Full Size LV404H1", image: "images/placeholder-1.png" },
+              { id: "lv404y19", name: "Full Size LV404Y19", image: "images/placeholder-1.png" },
+              { id: "lv404y9-series", name: "Full Size LV404Y9 Series", image: "images/placeholder-1.png" },
+              { id: "lv4403b-series", name: "Full Size LV4403B Series", image: "images/placeholder-1.png" },
+              { id: "lv4403h-series", name: "Full Size LV4403H Series", image: "images/placeholder-1.png" },
+              { id: "lv4403k-series", name: "Full Size LV4403K Series", image: "images/placeholder-1.png" },
+              { id: "lv4403y-series", name: "Full Size LV4403Y Series", image: "images/placeholder-1.png" },
+              { id: "2962-series", name: "High Pressure 2962 Series", image: "images/placeholder-1.png" },
+              { id: "pt6800b-series", name: "High Pressure PT6800B Series", image: "images/placeholder-1.png" },
+              { id: "high-pressure-regulators", name: "High Pressure Regulators", image: "images/placeholder-1.png" },
+              { id: "second-stage-regulators", name: "Second Stage Regulators", image: "images/placeholder-1.png" },
+              { id: "single-stage-regulators", name: "Single Stage Regulators", image: "images/placeholder-1.png" },
+              { id: "twin-stage-regulators", name: "Twin Stage Regulators", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Automatic Changeover",
+            items: [
+              { id: "automatic-changeover", name: "Automatic Changeover", image: "images/placeholder-1.png" },
+              { id: "5830-series", name: "Twin Stage System – 5830 Series", image: "images/placeholder-1.png" },
+              { id: "5800-series", name: "Two Stage Package – 5800 Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Gauges and Manifolds",
+            items: [
+              { id: "manifolds", name: "Manifolds", image: "images/placeholder-1.png" },
+              { id: "second-stage-special-setting", name: "Second Stage Special Setting", image: "images/placeholder-1.png" },
+              { id: "tpf", name: "TPF", image: "images/placeholder-1.png" },
+              { id: "1350r", name: "Tee Check Manifold 1350R", image: "images/placeholder-1.png" },
+              { id: "1450r", name: "Tee Check Manifold 1450R", image: "images/placeholder-1.png" },
+              { id: "vent-screen", name: "Vent Screen", image: "images/placeholder-1.png" },
+              { id: "x1580", name: "X1580", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Fittings and Pigtails",
+            items: [
+              { id: "913-series", name: "Bent Pigtails 913 Series", image: "images/placeholder-1.png" },
+              { id: "copper-pigtails", name: "Copper Pigtails", image: "images/placeholder-1.png" },
+              { id: "d912-series", name: "Dielectric Pigtails D912 Series", image: "images/placeholder-1.png" },
+              { id: "d913-series", name: "Dielectric Pigtails D913 Series", image: "images/placeholder-1.png" },
+              { id: "inlet-fittings", name: "Inlet Fittings", image: "images/placeholder-1.png" },
+              { id: "presto-tap-fittings", name: "Presto-Tap™ Fittings", image: "images/placeholder-1.png" },
+              { id: "pt912-series", name: "Presto-Tap™ Pigtails PT912 Series", image: "images/placeholder-1.png" },
+              { id: "pt913-series", name: "Presto-Tap™ Pigtails PT913 Series", image: "images/placeholder-1.png" },
+              { id: "912-series", name: "Straight Pigtails 912 Series", image: "images/placeholder-1.png" },
+              { id: "913-series-straight", name: "Straight Pigtails 913 Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Mounting and Hardware",
+            items: [
+              { id: "adjustable-vent-kits", name: "Adjustable Vent Kits", image: "images/placeholder-1.png" },
+              { id: "brackets", name: "Brackets", image: "images/placeholder-1.png" },
+              { id: "brackets-and-vent-kit", name: "Brackets and Vent Kit", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Kits and Accessories",
+            items: [
+              { id: "3139-accessories", name: "3139 Accessories", image: "images/placeholder-1.png" },
+              { id: "outfit-kits", name: "Outfit Kits", image: "images/placeholder-1.png" },
+              { id: "pt-af14-series", name: "PT-AF14 Series", image: "images/placeholder-1.png" },
+              { id: "pt36kit-series", name: "PT36KIT Series", image: "images/placeholder-1.png" },
+              { id: "ptkit-series", name: "PTKIT Series", image: "images/placeholder-1.png" },
+              { id: "ptlinkkga-series", name: "PTLINKKGA Series", image: "images/placeholder-1.png" },
+              { id: "presto-link", name: "Presto-Link", image: "images/placeholder-1.png" },
+              { id: "test-presto-tap-kits", name: "Test & Presto-Tap Kits", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Series / Components",
+            items: [
+              { id: "1580v-series", name: "1580V Series", image: "images/placeholder-1.png" },
+              { id: "302-series", name: "302 Series", image: "images/placeholder-1.png" },
+              { id: "5720-series", name: "5720 Series", image: "images/placeholder-1.png" },
+              { id: "597f-series", name: "597F Series", image: "images/placeholder-1.png" },
+              { id: "7525b-series", name: "7525B Series", image: "images/placeholder-1.png" },
+              { id: "aa1580-series", name: "AA1580 Series", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Cylinder Valves & Multivalves",
+        products: [
+          {
+            type: "Categories",
+            items: [
+              { id: "dot-cylinder-vapor", name: "DOT Cylinder Vapor", image: "images/placeholder-1.png" },
+              { id: "dot-cylinder-liquid", name: "DOT Cylinder Liquid", image: "images/placeholder-1.png" },
+              { id: "dot-cylinder-vapor-liquid", name: "DOT Cylinder Vapor & Liquid", image: "images/placeholder-1.png" },
+              { id: "dot-cylinder-vapor-propylene", name: "DOT Cylinder Vapor – Propylene Service", image: "images/placeholder-1.png" },
+              { id: "dot-cylinder-forklift", name: "DOT Cylinder Forklift", image: "images/placeholder-1.png" },
+              { id: "asme-domestic", name: "ASME Domestic", image: "images/placeholder-1.png" },
+              { id: "asme-motor-fuel-rv", name: "ASME Motor Fuel and RV", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Series",
+            items: [
+              { id: "y520d-series", name: "Y520D Series", image: "images/placeholder-1.png" },
+              { id: "g8475rl-series", name: "G8475RL Series", image: "images/placeholder-1.png" },
+              { id: "g8475rlw-series", name: "G8475RLW Series", image: "images/placeholder-1.png" },
+              { id: "d9107k8a", name: "D9107K8A / 9107K8A", image: "images/placeholder-1.png" },
+              { id: "d9103-series", name: "D9103 Series", image: "images/placeholder-1.png" },
+              { id: "d9102-series-dot-vapor", name: "D9102 Series – DOT Cylinder Vapor", image: "images/placeholder-1.png" },
+              { id: "d9102-series-asme-domestic", name: "D9102 Series – ASME Domestic", image: "images/placeholder-1.png" },
+              { id: "d9102-series", name: "D9102 Series", image: "images/placeholder-1.png" },
+              { id: "d9101-series-dot", name: "D9101 Series – DOT", image: "images/placeholder-1.png" },
+              { id: "d9101-series-asme-domestic", name: "D9101 Series – ASME Domestic", image: "images/placeholder-1.png" },
+              { id: "d9101-series-asme-motor-fuel", name: "D9101 Series – ASME Motor Fuel", image: "images/placeholder-1.png" },
+              { id: "d9101-series", name: "D9101 Series", image: "images/placeholder-1.png" },
+              { id: "9106co-series", name: "9106CO Series", image: "images/placeholder-1.png" },
+              { id: "9104pt-series", name: "9104PT Series", image: "images/placeholder-1.png" },
+              { id: "9104ppa-series", name: "9104PPA Series", image: "images/placeholder-1.png" },
+              { id: "9103-series-dot", name: "9103 Series – DOT", image: "images/placeholder-1.png" },
+              { id: "9103-series-asme", name: "9103 Series – ASME", image: "images/placeholder-1.png" },
+              { id: "9102-series-dot", name: "9102 Series – DOT", image: "images/placeholder-1.png" },
+              { id: "9102-series-asme", name: "9102 Series – ASME", image: "images/placeholder-1.png" },
+              { id: "9102-series-asme-motor-fuel", name: "9102 Series – ASME Motor Fuel", image: "images/placeholder-1.png" },
+              { id: "9101y5h", name: "9101Y5H", image: "images/placeholder-1.png" },
+              { id: "9101p6h", name: "9101P6H", image: "images/placeholder-1.png" },
+              { id: "9101p6", name: "9101P6", image: "images/placeholder-1.png" },
+              { id: "9101p5h", name: "9101P5H", image: "images/placeholder-1.png" },
+              { id: "9101p5", name: "9101P5", image: "images/placeholder-1.png" },
+              { id: "9101h-series", name: "9101H Series", image: "images/placeholder-1.png" },
+              { id: "9101dk-ds-dnp", name: "9101DK / 9101DS / 9101DNP", image: "images/placeholder-1.png" },
+              { id: "901c-series", name: "901C Series", image: "images/placeholder-1.png" },
+              { id: "901c1-dot", name: "901C1 – DOT", image: "images/placeholder-1.png" },
+              { id: "901c1-asme-motor-fuel", name: "901C1 – ASME Motor Fuel", image: "images/placeholder-1.png" },
+              { id: "8593al-series", name: "8593AL Series", image: "images/placeholder-1.png" },
+              { id: "8556-series", name: "8556 Series", image: "images/placeholder-1.png" },
+              { id: "8555r-series", name: "8555R Series", image: "images/placeholder-1.png" },
+              { id: "8555dl-series", name: "8555DL Series", image: "images/placeholder-1.png" },
+              { id: "8555d-series", name: "8555D Series", image: "images/placeholder-1.png" },
+              { id: "7556r-series", name: "7556R Series", image: "images/placeholder-1.png" },
+              { id: "6555r-series", name: "6555R Series", image: "images/placeholder-1.png" },
+              { id: "6543-series", name: "6543 Series", image: "images/placeholder-1.png" },
+              { id: "6542-series", name: "6542 Series", image: "images/placeholder-1.png" },
+              { id: "6533-series", name: "6533 Series", image: "images/placeholder-1.png" },
+              { id: "6532-series", name: "6532 Series", image: "images/placeholder-1.png" },
+              { id: "7136r-series", name: "7136R Series", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Pressure Gauges and Vent Valves",
+        products: [
+          {
+            type: "Categories",
+            items: [
+              { id: "pressure-gauges", name: "Pressure Gauges", image: "images/placeholder-1.png" },
+              { id: "vent-valves", name: "Vent Valves", image: "images/placeholder-1.png" },
+              { id: "fixed-liquid-level-gauge", name: "Fixed Liquid Level Gauge", image: "images/placeholder-1.png" },
+              { id: "combination-valve", name: "Combination Valve", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Pressure Gauge Series",
+            items: [
+              { id: "5575-series", name: "5575 Series", image: "images/placeholder-1.png" },
+              { id: "5547-series", name: "5547 Series", image: "images/placeholder-1.png" },
+              { id: "3226a-3-series", name: "3226A-3 Series", image: "images/placeholder-1.png" },
+              { id: "2434-series", name: "2434 Series", image: "images/placeholder-1.png" },
+              { id: "2411-series", name: "2411 Series", image: "images/placeholder-1.png" },
+              { id: "1286-series", name: "1286 Series", image: "images/placeholder-1.png" },
+              { id: "a8400-series", name: "A8400 Series", image: "images/placeholder-1.png" },
+              { id: "a8150-series", name: "A8150 Series", image: "images/placeholder-1.png" },
+              { id: "a8060-series", name: "A8060 Series", image: "images/placeholder-1.png" },
+              { id: "948gs-series", name: "948GS Series", image: "images/placeholder-1.png" },
+              { id: "948-948b-series", name: "948, 948B Series", image: "images/placeholder-1.png" },
+              { id: "7170-series", name: "7170 Series", image: "images/placeholder-1.png" },
+              { id: "612-series", name: "612 Series", image: "images/placeholder-1.png" },
+              { id: "5576-series", name: "5576 Series", image: "images/placeholder-1.png" },
+              { id: "6574-series", name: "6574 Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Vent Valve Series",
+            items: [
+              { id: "3165-series", name: "3165 Series", image: "images/placeholder-1.png" },
+              { id: "3165-vent-valves-series", name: "3165 Vent Valves Series", image: "images/placeholder-1.png" },
+              { id: "tss3169-series", name: "TSS3169 Series", image: "images/placeholder-1.png" },
+              { id: "ta3169f-series", name: "TA3169F Series", image: "images/placeholder-1.png" }
+            ]
+          },
+          {
+            type: "Other Valves / Components",
+            items: [
+              { id: "a2805c-series", name: "A2805C Series", image: "images/placeholder-1.png" },
+              { id: "7700-series", name: "7700 Series", image: "images/placeholder-1.png" }
+            ]
+          }
+        ]
+      },
     ]
   }
 ];
