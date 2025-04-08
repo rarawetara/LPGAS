@@ -33,7 +33,10 @@
 
     <div class="main-panel">
       <div class="search-bar">
-        <div id="searchBar" class="search-wrapper"></div>
+        <div id="searchBar" class="search-wrapper">
+          <input type="text" id="searchInput" placeholder="Search products..." />
+          <i class="search-icon" onclick="document.getElementById('searchInput').focus()">🔍</i>
+        </div>
       </div>
       <div id="filters" class="filters"></div>
       <main id="content" class="content">

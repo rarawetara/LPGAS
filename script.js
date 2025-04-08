@@ -1050,3 +1050,11 @@ function initializeFilters() {
     });
   }
 }
+
+// Добавляем обработчик переключения каталога, только если элемент существует
+const catalogueToggle = document.querySelector('.catalogue-toggle');
+if (catalogueToggle) {
+  catalogueToggle.addEventListener('click', function() {
+    document.body.classList.toggle('catalog-open');
+  });
+}
