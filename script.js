@@ -726,11 +726,44 @@ function showMainMenu() {
     const content = getElement('content');
     const filters = getElement('filters');
     const searchBar = getElement('searchBar');
+    const aboutHome = document.querySelector('.about-home');
+    const catalogBtn = document.getElementById('catalogBtn');
+    const contactModal = document.getElementById('contactInfoModal');
 
     if (!content || !filters || !searchBar) {
       throw new Error('Required elements not found');
     }
 
+    // Hide contact modal if it's open
+    if (contactModal) {
+      contactModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    // Hide about section if it exists
+    if (aboutHome) {
+      aboutHome.style.display = 'none';
+    }
+
+    // Show search and filters
+    document.body.classList.add('catalog-open');
+    
+    // Set active state on catalog button if it exists
+    if (catalogBtn) {
+      catalogBtn.classList.add('active');
+    }
+    
+    // Add back button on mobile when sidebar is hidden
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile && !document.getElementById('mobileBackBtn')) {
+      const backBtn = document.createElement('button');
+      backBtn.id = 'mobileBackBtn';
+      backBtn.className = 'mobile-back-btn';
+      backBtn.innerHTML = '← Back';
+      backBtn.onclick = goToAbout;
+      content.parentNode.insertBefore(backBtn, content);
+    }
+    
     // Очищаем контент
     content.innerHTML = '';
     
@@ -755,6 +788,9 @@ function showMainMenu() {
       </div>
     `;
 
+    // Show search elements
+    searchBar.style.display = 'block';
+    
     // Инициализируем фильтры и поиск
     initializeFilters();
     
@@ -981,8 +1017,8 @@ function initializeCollapsible() {
     });
   });
   
-  // По умолчанию сворачиваем все категории, кроме первой
-  document.querySelectorAll('.catalog-category:not(:first-child), .catalog-subcategory, .product-type').forEach(el => {
+  // По умолчанию сворачиваем все категории
+  document.querySelectorAll('.catalog-category, .catalog-subcategory, .product-type').forEach(el => {
     el.classList.add('collapsed');
   });
 }
@@ -1016,8 +1052,39 @@ window.goToCatalog = function () {
 };
 
 window.goToAbout = function () {
+  // Get elements
+  const content = getElement('content');
+  const filters = getElement('filters');
+  const searchBar = getElement('searchBar');
+  const aboutHome = document.querySelector('.about-home');
+  const catalogBtn = document.getElementById('catalogBtn');
+  const mobileBackBtn = document.getElementById('mobileBackBtn');
+  
+  // Remove mobile back button if it exists
+  if (mobileBackBtn) {
+    mobileBackBtn.remove();
+  }
+  
+  // Show about section if it exists
+  if (aboutHome) {
+    aboutHome.style.display = 'block';
+  }
+  
+  // Hide catalog elements
+  document.body.classList.remove('catalog-open');
+  
+  // Remove active state from catalog button
+  if (catalogBtn) {
+    catalogBtn.classList.remove('active');
+  }
+  
+  // Clear and hide catalog elements
+  if (content) content.innerHTML = '';
+  if (filters) filters.style.display = 'none';
+  if (searchBar) searchBar.style.display = 'none';
+  
+  // Update URL without reloading
   history.pushState({}, '', location.pathname);
-  location.reload();
 };
 
 // Добавляем debounce для поиска
@@ -1051,10 +1118,37 @@ function initializeFilters() {
   }
 }
 
-// Добавляем обработчик переключения каталога, только если элемент существует
-const catalogueToggle = document.querySelector('.catalogue-toggle');
-if (catalogueToggle) {
-  catalogueToggle.addEventListener('click', function() {
-    document.body.classList.toggle('catalog-open');
-  });
-}
+// Add the showContactInfo function to toggle contact modal
+window.showContactInfo = function() {
+  const contactModal = document.getElementById('contactInfoModal');
+  if (contactModal) {
+    contactModal.style.display = 'block';
+    // Prevent scrolling of the background
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+// Add function to close the contact modal
+window.closeContactInfo = function() {
+  const contactModal = document.getElementById('contactInfoModal');
+  if (contactModal) {
+    contactModal.style.display = 'none';
+    // Re-enable scrolling
+    document.body.style.overflow = '';
+  }
+};
+
+// Close modal if user clicks outside of it
+window.addEventListener('click', function(event) {
+  const contactModal = document.getElementById('contactInfoModal');
+  if (event.target === contactModal) {
+    closeContactInfo();
+  }
+});
+
+// Allow ESC key to close the modal
+window.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeContactInfo();
+  }
+});

@@ -14,24 +14,111 @@
 <body>
   <header class="topbar">
     <div class="logo" onclick="goToAbout()">LPGAS</div>
-    <div class="contact">
-      <a href="tel:+971503420523">+971 (50) 342-0523</a>
-      <span>|</span>
-      <a href="mailto:info@lpgas.ae">info@lpgas.ae</a>
-    </div>
   </header>
 
   <div class="layout">
     <aside class="sidebar">
       <nav class="main-menu">
-        <button id="catalogue" onclick="showMainMenu()">
+        <button id="catalogBtn" onclick="showMainMenu()">
           <span class="menu-icon">☰</span>
-          Catalogue
+          <span class="menu-text">Catalogue</span>
+        </button>
+        <button id="contactBtn" onclick="showContactInfo()">
+          <span class="menu-icon">✉</span>
+          <span class="menu-text">Contact Us</span>
         </button>
       </nav>
+      <div class="contact-info" style="display: none;">
+        <a href="tel:+971503420523">+971 (50) 342-0523</a>
+        <span>|</span>
+        <a href="mailto:info@lpgas.ae">info@lpgas.ae</a>
+      </div>
     </aside>
 
     <div class="main-panel">
+      <section class="about-home">
+        <div class="concept-layout">
+          <div class="concept-bg" aria-hidden="true"></div>
+          
+          <h1 class="concept-title">Industrial LPG <span>Solutions & Equipment</span></h1>
+          
+          <!-- Mobile-only top button -->
+          <div class="mobile-top-cta">
+            <a href="javascript:void(0)" class="concept-btn outline" onclick="goToCatalog()" aria-label="Browse product catalogue">
+              <span class="menu-icon" aria-hidden="true">☰</span> Explore Equipment
+            </a>
+          </div>
+          
+          <div class="concept-text-container">
+            <p class="concept-text text-1"><strong>Engineered Excellence.</strong> LPGAS delivers premium industrial LPG systems in the UAE, combining cutting-edge technology with reliable performance. Our specialized equipment - from vaporizers to regulators - is designed to meet the most demanding industry requirements.</p>
+            
+            <p class="concept-text text-2"><strong>Safety & Standards.</strong> With decades of industry experience, we've established ourselves as a trusted partner for businesses requiring gas handling systems that meet international safety standards and regulatory requirements while maximizing operational efficiency.</p>
+            
+            <p class="concept-text text-3"><strong>Innovation & Support.</strong> Our engineering team continuously develops customized solutions for complex industrial challenges, backed by responsive maintenance services that ensure your systems operate at peak performance throughout their lifecycle.</p>
+          </div>
+          
+          <div class="concept-image-gallery">
+            <div class="concept-image img-1">
+              <img src="images/placeholder-2.png" alt="Industrial vaporizing equipment" loading="lazy">
+              <div class="image-caption">Vaporizing Systems</div>
+              <div class="image-frame" aria-hidden="true"></div>
+            </div>
+            
+            <div class="concept-image img-2">
+              <div class="image-dots" aria-hidden="true"></div>
+              <img src="images/placeholder-2.png" alt="Professional LPG installations" loading="lazy">
+              <div class="image-caption">Professional Installation</div>
+              <div class="image-shape" aria-hidden="true"></div>
+            </div>
+            
+            <div class="concept-image img-3">
+              <img src="images/placeholder-2.png" alt="REGO components and parts" loading="lazy">
+              <div class="image-caption">Quality Components</div>
+              <div class="color-overlay" aria-hidden="true"></div>
+            </div>
+          </div>
+          
+          <div class="concept-features">
+            <div class="feature">
+              <div class="feature-icon">🔧</div>
+              <h3>Custom Engineering</h3>
+              <p>Tailored solutions for your specific industrial requirements</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🛡️</div>
+              <h3>Certified Safety</h3>
+              <p>Equipment that meets international safety standards</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">⚙️</div>
+              <h3>Technical Support</h3>
+              <p>Expert assistance throughout installation and operation</p>
+            </div>
+          </div>
+          
+          <div class="accent-circle circle-1" aria-hidden="true"></div>
+          <div class="accent-circle circle-2" aria-hidden="true"></div>
+          <div class="accent-shape" aria-hidden="true"></div>
+          
+          <div class="concept-cta">
+            <a href="javascript:void(0)" class="concept-btn" onclick="showContactInfo()" aria-label="Contact us for inquiries">Get Expert Consultation</a>
+            <a href="javascript:void(0)" class="concept-btn outline" onclick="showMainMenu()" aria-label="Browse product catalogue">
+              <span class="menu-icon" aria-hidden="true">☰</span> Explore Equipment
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <div id="contactInfoModal" class="contact-modal" style="display:none">
+        <div class="contact-modal-content">
+          <span class="close-modal" onclick="closeContactInfo()">&times;</span>
+          <h3>Contact Us</h3>
+          <a href="tel:+971503420523">+971 (50) 342-0523</a>
+          <span>|</span>
+          <a href="mailto:info@lpgas.ae">info@lpgas.ae</a>
+        </div>
+      </div>
+
       <div class="search-bar">
         <div id="searchBar" class="search-wrapper">
           <input type="text" id="searchInput" placeholder="Search products..." />
@@ -53,6 +140,9 @@
 
       if (view === "catalogue") {
         showMainMenu();
+      } else {
+        // Ensure about section is visible by default
+        goToAbout();
       }
     }
   </script>
